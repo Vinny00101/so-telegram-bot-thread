@@ -1,0 +1,302 @@
+[
+    {
+        "nome": "Attack on Titan",
+        "generos": ["Ação", "Drama", "Fantasia"],
+        "estudio": "MAPPA",
+        "ano": 2013,
+        "episodios": 75,
+        "status": "Concluído",
+        "descricao": "Humanidade luta contra titãs gigantes em um mundo pós-apocalíptico, com segredos e batalhas épicas.",
+        "link": "https://example.com/anime/attack-on-titan"
+    },
+    {
+        "nome": "Demon Slayer",
+        "generos": ["Ação", "Shonen", "Fantasia"],
+        "estudio": "ufotable",
+        "ano": 2019,
+        "episodios": 44,
+        "status": "Em andamento",
+        "descricao": "Tanjiro busca vingar sua família e salvar sua irmã, enfrentando demônios em um Japão feudal.",
+        "link": "https://example.com/anime/demon-slayer"
+    },
+    {
+        "nome": "K-On!",
+        "generos": ["Slice of Life", "Comédia", "Música"],
+        "estudio": "Kyoto Animation",
+        "ano": 2009,
+        "episodios": 39,
+        "status": "Concluído",
+        "descricao": "Quatro garotas formam uma banda escolar, misturando amizade, música e momentos leves e divertidos.",
+        "link": "https://example.com/anime/k-on"
+    },
+    {
+        "nome": "Jujutsu Kaisen",
+        "generos": ["Ação", "Shonen", "Sobrenatural"],
+        "estudio": "MAPPA",
+        "ano": 2020,
+        "episodios": 24,
+        "status": "Em andamento",
+        "descricao": "Yuji Itadori se junta a feiticeiros para combater maldições após engolir um artefato amaldiçoado.",
+        "link": "https://example.com/anime/jujutsu-kaisen"
+    },
+    {
+        "nome": "Spy x Family",
+        "generos": ["Comédia", "Ação", "Slice of Life"],
+        "estudio": "Wit Studio",
+        "ano": 2022,
+        "episodios": 25,
+        "status": "Em andamento",
+        "descricao": "Um espião, uma assassina e uma telepata formam uma família falsa para missões secretas e laços reais.",
+        "link": "https://example.com/anime/spy-x-family"
+    },
+    {
+        "nome": "Steins;Gate",
+        "generos": ["Ficção Científica", "Suspense", "Drama"],
+        "estudio": "White Fox",
+        "ano": 2011,
+        "episodios": 24,
+        "status": "Concluído",
+        "descricao": "Um cientista excêntrico descobre viagens no tempo, enfrentando dilemas éticos e conspirações.",
+        "link": "https://example.com/anime/steins-gate"
+    },
+    {
+        "nome": "Fullmetal Alchemist: Brotherhood",
+        "generos": ["Ação", "Aventura", "Fantasia"],
+        "estudio": "Bones",
+        "ano": 2009,
+        "episodios": 64,
+        "status": "Concluído",
+        "descricao": "Dois irmãos alquimistas buscam a Pedra Filosofal após uma tragédia causada por um experimento proibido.",
+        "link": "https://example.com/anime/fmab"
+    },
+    {
+        "nome": "Your Name",
+        "generos": ["Romance", "Drama", "Fantasia"],
+        "estudio": "CoMix Wave Films",
+        "ano": 2016,
+        "episodios": 1,
+        "status": "Filme",
+        "descricao": "Dois jovens trocam de corpo misteriosamente e criam uma conexão emocional além do tempo e espaço.",
+        "link": "https://example.com/anime/your-name"
+    },
+    {
+        "nome": "One Punch Man",
+        "generos": ["Ação", "Comédia", "Superpoderes"],
+        "estudio": "Madhouse",
+        "ano": 2015,
+        "episodios": 24,
+        "status": "Em andamento",
+        "descricao": "Saitama derrota qualquer inimigo com um único soco, mas busca um desafio digno para dar sentido à vida.",
+        "link": "https://example.com/anime/one-punch-man"
+    },
+    {
+        "nome": "Death Note",
+        "generos": ["Suspense", "Psicológico", "Mistério"],
+        "estudio": "Madhouse",
+        "ano": 2006,
+        "episodios": 37,
+        "status": "Concluído",
+        "descricao": "Um estudante encontra um caderno que mata quem tem o nome escrito nele, iniciando um jogo mortal de inteligência.",
+        "link": "https://example.com/anime/death-note"
+    },
+    {
+        "nome": "Chainsaw Man",
+        "generos": ["Ação", "Terror", "Sobrenatural"],
+        "estudio": "MAPPA",
+        "ano": 2022,
+        "episodios": 12,
+        "status": "Em andamento",
+        "descricao": "Denji, um jovem endividado, funde-se ao seu demônio de estimação e se torna o Homem-Motoserra, caçando monstros em um mundo brutal.",
+        "link": "https://example.com/anime/chainsaw-man"
+    },
+    {
+        "nome": "Vivy: Fluorite Eye’s Song",
+        "generos": ["Ficção Científica", "Drama", "Ação"],
+        "estudio": "Wit Studio",
+        "ano": 2021,
+        "episodios": 13,
+        "status": "Concluído",
+        "descricao": "Uma IA cantora é incumbida de impedir uma guerra entre humanos e máquinas ao longo de cem anos de história.",
+        "link": "https://example.com/anime/vivy"
+    },
+    {
+        "nome": "Mob Psycho 100",
+        "generos": ["Ação", "Comédia", "Sobrenatural"],
+        "estudio": "Bones",
+        "ano": 2016,
+        "episodios": 37,
+        "status": "Concluído",
+        "descricao": "Um garoto com poderes psíquicos tenta viver uma vida normal enquanto aprende a controlar suas emoções e habilidades devastadoras.",
+        "link": "https://example.com/anime/mob-psycho-100"
+    },
+    {
+        "nome": "Made in Abyss",
+        "generos": ["Aventura", "Fantasia", "Mistério"],
+        "estudio": "Kinema Citrus",
+        "ano": 2017,
+        "episodios": 25,
+        "status": "Em andamento",
+        "descricao": "Uma jovem aventureira desce ao abismo em busca de sua mãe, enfrentando criaturas misteriosas e segredos sombrios.",
+        "link": "https://example.com/anime/made-in-abyss"
+    },
+    {
+        "nome": "Erased",
+        "generos": ["Suspense", "Drama", "Viagem no Tempo"],
+        "estudio": "A-1 Pictures",
+        "ano": 2016,
+        "episodios": 12,
+        "status": "Concluído",
+        "descricao": "Um homem volta à infância para impedir uma série de assassinatos e salvar uma colega de classe desaparecida.",
+        "link": "https://example.com/anime/erased"
+    },
+    {
+        "nome": "Mushoku Tensei: Jobless Reincarnation",
+        "generos": ["Fantasia", "Isekai", "Aventura"],
+        "estudio": "Studio Bind",
+        "ano": 2021,
+        "episodios": 24,
+        "status": "Em andamento",
+        "descricao": "Um homem reencarna em um mundo mágico e decide viver sua nova vida sem arrependimentos, dominando feitiços e o poder do conhecimento.",
+        "link": "https://example.com/anime/mushoku-tensei"
+    },
+    {
+        "nome": "Parasyte: The Maxim",
+        "generos": ["Terror", "Ficção Científica", "Ação"],
+        "estudio": "Madhouse",
+        "ano": 2014,
+        "episodios": 24,
+        "status": "Concluído",
+        "descricao": "Um parasita alienígena toma controle da mão de um estudante, e juntos precisam sobreviver em meio a outros seres hostis.",
+        "link": "https://example.com/anime/parasyte"
+    },
+    {
+        "nome": "Toradora!",
+        "generos": ["Romance", "Comédia", "Slice of Life"],
+        "estudio": "J.C.Staff",
+        "ano": 2008,
+        "episodios": 25,
+        "status": "Concluído",
+        "descricao": "Dois estudantes de personalidades opostas se unem para ajudar um ao outro a conquistar seus respectivos amores, mas acabam se aproximando.",
+        "link": "https://example.com/anime/toradora"
+    },
+    {
+        "nome": "Re:Zero - Starting Life in Another World",
+        "generos": ["Fantasia", "Drama", "Isekai"],
+        "estudio": "White Fox",
+        "ano": 2016,
+        "episodios": 50,
+        "status": "Em andamento",
+        "descricao": "Subaru é transportado para outro mundo e descobre que tem o poder de reviver após a morte, lutando para salvar quem ama.",
+        "link": "https://example.com/anime/re-zero"
+    },
+    {
+        "nome": "The Promised Neverland",
+        "generos": ["Suspense", "Terror", "Drama"],
+        "estudio": "CloverWorks",
+        "ano": 2019,
+        "episodios": 23,
+        "status": "Concluído",
+        "descricao": "Crianças descobrem o terrível segredo do orfanato onde vivem e planejam uma fuga desesperada para sobreviver.",
+        "link": "https://example.com/anime/the-promised-neverland"
+    },
+    {
+        "nome": "Cowboy Bebop",
+        "generos": ["Ação", "Ficção Científica", "Aventura"],
+        "estudio": "Sunrise",
+        "ano": 1998,
+        "episodios": 26,
+        "status": "Concluído",
+        "descricao": "Caçadores de recompensas viajam pelo espaço em busca de criminosos, enquanto enfrentam seus passados sombrios e dilemas existenciais.",
+        "link": "https://example.com/anime/cowboy-bebop"
+    },
+    {
+        "nome": "Tokyo Ghoul",
+        "generos": ["Terror", "Ação", "Drama"],
+        "estudio": "Pierrot",
+        "ano": 2014,
+        "episodios": 48,
+        "status": "Concluído",
+        "descricao": "Após ser atacado por uma ghoul, Kaneki se transforma em meio-humano e luta para encontrar seu lugar entre dois mundos hostis.",
+        "link": "https://example.com/anime/tokyo-ghoul"
+    },
+    {
+        "nome": "My Hero Academia",
+        "generos": ["Ação", "Shonen", "Superpoderes"],
+        "estudio": "Bones",
+        "ano": 2016,
+        "episodios": 138,
+        "status": "Em andamento",
+        "descricao": "Em um mundo onde quase todos têm poderes, um garoto sem dons luta para se tornar o maior herói da história.",
+        "link": "https://example.com/anime/my-hero-academia"
+    },
+    {
+        "nome": "Violet Evergarden",
+        "generos": ["Drama", "Romance", "Slice of Life"],
+        "estudio": "Kyoto Animation",
+        "ano": 2018,
+        "episodios": 13,
+        "status": "Concluído",
+        "descricao": "Uma ex-soldado tenta entender o significado do amor enquanto trabalha escrevendo cartas que tocam o coração das pessoas.",
+        "link": "https://example.com/anime/violet-evergarden"
+    },
+    {
+        "nome": "Black Clover",
+        "generos": ["Ação", "Fantasia", "Shonen"],
+        "estudio": "Pierrot",
+        "ano": 2017,
+        "episodios": 170,
+        "status": "Em andamento",
+        "descricao": "Asta nasceu sem magia em um mundo mágico, mas sonha em se tornar o Rei Mago, confiando apenas em sua determinação e força.",
+        "link": "https://example.com/anime/black-clover"
+    },
+    {
+        "nome": "Dr. Stone",
+        "generos": ["Ficção Científica", "Aventura", "Shonen"],
+        "estudio": "TMS Entertainment",
+        "ano": 2019,
+        "episodios": 55,
+        "status": "Em andamento",
+        "descricao": "Após a humanidade ser petrificada por milênios, um gênio tenta reconstruir a civilização usando o poder da ciência.",
+        "link": "https://example.com/anime/dr-stone"
+    },
+    {
+        "nome": "Code Geass",
+        "generos": ["Ação", "Drama", "Ficção Científica"],
+        "estudio": "Sunrise",
+        "ano": 2006,
+        "episodios": 50,
+        "status": "Concluído",
+        "descricao": "Lelouch obtém o poder da obediência absoluta e lidera uma rebelião para destruir o império que escravizou o Japão.",
+        "link": "https://example.com/anime/code-geass"
+    },
+    {
+        "nome": "Sword Art Online",
+        "generos": ["Ação", "Aventura", "Romance"],
+        "estudio": "A-1 Pictures",
+        "ano": 2012,
+        "episodios": 96,
+        "status": "Em andamento",
+        "descricao": "Jogadores presos em um MMORPG precisam lutar para sobreviver, pois morrer no jogo significa morrer na vida real.",
+        "link": "https://example.com/anime/sword-art-online"
+    },
+    {
+        "nome": "Haikyuu!!",
+        "generos": ["Esporte", "Comédia", "Drama"],
+        "estudio": "Production I.G",
+        "ano": 2014,
+        "episodios": 85,
+        "status": "Concluído",
+        "descricao": "Hinata sonha em se tornar um grande jogador de vôlei, enfrentando rivais e fortalecendo laços de amizade em quadra.",
+        "link": "https://example.com/anime/haikyuu"
+    },
+    {
+        "nome": "No Game No Life",
+        "generos": ["Fantasia", "Comédia", "Isekai"],
+        "estudio": "Madhouse",
+        "ano": 2014,
+        "episodios": 12,
+        "status": "Concluído",
+        "descricao": "Dois irmãos gamers são transportados para um mundo onde tudo é decidido através de jogos, e buscam se tornar os governantes supremos.",
+        "link": "https://example.com/anime/no-game-no-life"
+    }
+]
