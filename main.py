@@ -16,10 +16,11 @@ def main():
     
     app = Application.builder().token(TOKEN).build()
     
-    t = Animeloader.get_json_with_thread("data/basedados.json", callback=lambda: print("Base pronta"))
+    t = Animeloader.get_json_Anime("data/basedados.json", callback=lambda: print("Base pronta"))
+    time.sleep(0.5)
+    t = Animeloader.get_json_Generos("data/basedadosGeneros.json", callback=lambda: print("Base pronta"))
     time.sleep(0.5)
     
-    app.add_handler(CommandHandler("start", handlers.start_command))
     app.add_handler(CommandHandler("recomenda", handlers.recomenda_command))
     app.add_handler(CommandHandler("info", handlers.info_command))
     app.add_handler(CommandHandler("novidades", handlers.novidades_command))

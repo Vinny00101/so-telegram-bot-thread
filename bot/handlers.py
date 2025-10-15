@@ -1,18 +1,30 @@
 from telegram import Update
-from .loader import Animeloader
 from telegram.ext import ContextTypes
 from .threads.infor_command import infor_command
+from .threads.generos_command import generos_command
+from .threads.recomenda_command import recomenda_command
 import queue
 import threading
 
 class handlers():
-    @staticmethod
-    async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        await update.message.reply_text("Bem vindo ao Anispeed, para mais informações de comandos use o */info*", parse_mode="Markdown")
-        
+    '''
+    Esta parte utilizza de thread para chama uma funcao de buscar, essa funcao de buscar roda em daemon e utiliza 
+    se de queue para recebe os valores da busca
+    '''
     @staticmethod
     async def recomenda_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        await update.message.reply_text("Aqui vai uma recomendação!")
+        await update.message.reply_text("Escolhendo as recomendaçães...")
+        
+        resultado_queue = queue.Queue()
+        
+        threading.Thread(
+            target= recomenda_command.buscar,
+            args=(resultado_queue,),
+            daemon=True
+        ).start()
+        
+        response_animes = resultado_queue.get()
+        await update.message.reply_text(response_animes, parse_mode="Markdown")
 
     '''
     Este método utiliza threading para executar a busca de um anime em paralelo, evitando bloquear
@@ -56,12 +68,17 @@ class handlers():
 
     @staticmethod
     async def novidades_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        await update.message.reply_text("Últimas novidades!")
+        novidades_texto = (
+            "*Novidades do Mundo dos Animes!*\n\n"
+            "Fique por dentro dos lançamentos, trailers e notícias fresquinhas!\n"
+            "Confira mais no site: [Anime News Network](https://www.animenewsnetwork.com/)"
+        )
+        await update.message.reply_text(novidades_texto, parse_mode="Markdown")
 
     @staticmethod
     async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         help_text = (
-            "🤖 *Comandos disponíveis:*\n\n"
+            "*Comandos disponíveis:*\n\n"
             "/recomenda - Receba uma recomendação personalizada\n"
             "/info - Veja informações sobre o bot\n"
             "/novidades - Veja as últimas atualizações\n"
@@ -72,4 +89,21 @@ class handlers():
 
     @staticmethod
     async def generos_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        await update.message.reply_text("Lista de gêneros aqui!")
+        if not context.args:
+
+            await update.message.reply_text("Todos os generos abaixo. Caso precisa achar um anime por genero digite /genero *<name genero>*\n\n", parse_mode="Markdown")
+            
+            resultado_queue = queue.Queue()
+        
+            threading.Thread(
+                target=generos_command.buscar_generos,
+                args=(resultado_queue,), 
+                daemon=True
+            ).start()
+            
+            response_genero = resultado_queue.get()
+            
+            await update.message.reply_text(response_genero, parse_mode="Markdown")
+            return
+
+        
