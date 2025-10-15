@@ -1,21 +1,29 @@
 import threading
 import json
 
-class Animeloader():
+class Animeloader:
     ANIMES = []
-    def get_json(self, caminho: str):
-        try: 
-            with open(caminho, 'r', encoding='utf-8') as arquivo:
-                self.ANIMES = json.load(arquivo)
-                print(f"{len(self.ANIMES)} animes carregados com sucesso!")
-        except FileExistsError:
-            print("Erro: Arquivo não encontrado.")
-            self.ANIMES = []
-        except json.JSONDecodeError:
-            print("Erro: Arquivo não encontrado.")
-            self.ANIMES = []
+    ## Condições de corrida: caso estiver mais de uma thread tentando 
+    ## acessa ou modifica dados, usamos o lock para garanti que o Animes sejam carregados antes de seu uso
+    _lock = threading.Lock()
 
-    def get_json_with_thread(self, caminho: str):
-        get_json_thread = threading.Thread(target=self.get_json, args=(caminho,))
-        get_json_thread.start()
+    @staticmethod
+    def get_json_with_thread(caminho: str, callback=None):
+        import threading, json
+
+        def tarefa():
+            try:
+                with open(caminho, "r", encoding="utf-8") as f:
+                    dados = json.load(f)
+                    with Animeloader._lock:
+                        Animeloader.ANIMES = dados
+                print(f"{len(Animeloader.ANIMES)} animes carregados com sucesso!")
+                if callback:
+                    callback()
+            except Exception as e:
+                print("Erro ao carregar JSON:", e)
+
+        t = threading.Thread(target=tarefa, daemon=True)
+        t.start()
+        return t
         

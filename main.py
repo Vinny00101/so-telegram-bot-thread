@@ -4,6 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 from bot.loader import Animeloader
 from bot.handlers import handlers
+import time
 
 load_dotenv()
 
@@ -15,9 +16,10 @@ def main():
     
     app = Application.builder().token(TOKEN).build()
     
-    load = Animeloader()
-    load.get_json_with_thread('data/basedados.json')
+    t = Animeloader.get_json_with_thread("data/basedados.json", callback=lambda: print("Base pronta"))
+    time.sleep(0.5)
     
+    app.add_handler(CommandHandler("start", handlers.start_command))
     app.add_handler(CommandHandler("recomenda", handlers.recomenda_command))
     app.add_handler(CommandHandler("info", handlers.info_command))
     app.add_handler(CommandHandler("novidades", handlers.novidades_command))
